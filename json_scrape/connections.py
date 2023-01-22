@@ -33,7 +33,7 @@ def get_disruptions_data(septa_disruptions_url):
         print(f'Unexprected Error: {unexpected_error}')
         raise unexpected_error
 
-def get_google_worksheets(spreadsheet_name,credentials_filename='../docs/credentials.json'):
+def get_google_worksheets(spreadsheet_name,credentials_filename='../credentials.json'):
     
     google_sheet = gspread.service_account(filename=credentials_filename).open(spreadsheet_name)
 
