@@ -27,7 +27,7 @@ def main():
     final_detours_df = pd.DataFrame(detour_df_columns)
     final_df = concat_final_advisories_df_to_final_detours_df(final_detours_df, final_advisories_df)
 
-    sheets = get_google_worksheets('json_scrape', '../docs/credentials.json')
+    sheets = get_google_worksheets('json_scrape', '../credentials.json')
     set_with_dataframe(sheets['Sheet1'], final_df)
 
 if __name__ == '__main__':
