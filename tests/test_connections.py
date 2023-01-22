@@ -1,5 +1,5 @@
 import pytest
-from philly_scrape.connections import get_disruptions_data
+from json_scrape.connections import get_disruptions_data
 
 class TestGetDisruptionsData:
     def test_if_url_argument_is_an_empty_string(self):
