@@ -246,7 +246,7 @@ class TestSeparateDetoursIntoNewDf():
 
         pd.testing.assert_frame_equal(test_df, expected_df)
 
-# these next 2 tests actually return strings ??? needs updating
+
 class TestCreateTitleColumn():
     def test_detour_start_location_with_double_spaces_or_space_Sts_returns_title_series_with_one_space_and_detour(self):
         test_series = create_data_frame(
